@@ -28,7 +28,14 @@ void circle(){
   area = radius*radius*pi;
   printf("area of circle is = %f", area);
 }
-
+// input and output function 
+void input_output(){
+  int a;
+  printf("Enter a number : ");
+  scanf("%d",&a);
+  printf("The number is = %d",a);
+  
+}
 
 int main() {
   printf("Hello World\n");
@@ -36,6 +43,7 @@ int main() {
   // variables();
   //rectangle();
   //arithmetic();
-  circle();
+  //circle();
+  input_output();
   return 0;
 }
