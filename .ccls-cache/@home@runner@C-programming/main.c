@@ -19,8 +19,14 @@ void rectangle() {
  int length =10 , width =20, area;
   area = length* width;
   printf("area of rectangle is = %d",area);
-  
-  
+
+}
+//program to find area of circle 
+void circle(){
+  float area, pi = 3.14;
+  int radius = 5;
+  area = radius*radius*pi;
+  printf("area of circle is = %f", area);
 }
 
 
@@ -28,7 +34,8 @@ int main() {
   printf("Hello World\n");
   printf("C language learning\n");
   // variables();
-  rectangle();
+  //rectangle();
   //arithmetic();
+  circle();
   return 0;
 }
