@@ -14,36 +14,44 @@ void arithmetic() {
   printf("multiplication of a and b is = %d\n", a * b);
   printf("division of c and a is = %d\n", c / a);
 }
-// program to find area of rectangle 
+// program to find area of rectangle
 void rectangle() {
- int length =10 , width =20, area;
-  area = length* width;
-  printf("area of rectangle is = %d",area);
-
+  int length = 10, width = 20, area;
+  area = length * width;
+  printf("area of rectangle is = %d", area);
 }
-//program to find area of circle 
-void circle(){
+// program to find area of circle
+void circle() {
   float area, pi = 3.14;
   int radius = 5;
-  area = radius*radius*pi;
+  area = radius * radius * pi;
   printf("area of circle is = %f", area);
 }
-// input and output function 
-void input_output(){
+// input and output function
+void input_output() {
   int a;
   printf("Enter a number : ");
-  scanf("%d",&a);
-  printf("The number is = %d",a);
-  
+  scanf("%d", &a);
+  printf("The number is = %d", a);
+}
+// program to find average of two numbers
+void average() {
+  int a, b;
+  float avg;
+  printf("Enter two numbers : ");
+  scanf("%d%d", &a, &b);
+  avg = (a + b) / 2;
+  printf("average of two numbers is = %f", avg);
 }
 
 int main() {
   printf("Hello World\n");
   printf("C language learning\n");
   // variables();
-  //rectangle();
-  //arithmetic();
-  //circle();
-  input_output();
+  // rectangle();
+  // arithmetic();
+  // circle();
+  //input_output();
+  average();
   return 0;
 }
