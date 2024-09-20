@@ -43,6 +43,7 @@ void average() {
   avg = (a + b) / 2;
   printf("average of two numbers is = %f", avg);
 }
+//
 
 int main() {
   printf("Hello World\n");
@@ -52,6 +53,6 @@ int main() {
   // arithmetic();
   // circle();
   //input_output();
-  average();
+  //average();
   return 0;
 }

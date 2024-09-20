@@ -43,6 +43,22 @@ void average() {
   avg = (a + b) / 2;
   printf("average of two numbers is = %f", avg);
 }
+//relational operator
+void relational(){
+  int a,b;
+  printf("Enter first number : ");
+  scanf("%d",&a);
+  printf("Enter second number : ");
+  scanf("%d",&b);
+  printf("a>b = %d\n",a>b);
+  printf("a<b = %d\n",a<b);
+  printf("a>=b = %d\n",a>=b);
+  printf("a<=b = %d\n",a<=b);
+  printf("a==b = %d\n",a==b);
+  printf("a!=b = %d\n",a!=b);
+  
+  
+}
 
 int main() {
   printf("Hello World\n");
@@ -52,6 +68,7 @@ int main() {
   // arithmetic();
   // circle();
   //input_output();
-  average();
+  //average();
+  relational();
   return 0;
 }
