@@ -44,23 +44,48 @@ void average() {
   avg = (a + b) / 2;
   printf("average of two numbers is = %f", avg);
 }
-//relational operator
-void relational(){
-  int a,b;
+// relational operator
+void relational() {
+  int a, b;
   printf("Enter first number : ");
-  scanf("%d",&a);
+  scanf("%d", &a);
   printf("Enter second number : ");
-  scanf("%d",&b);
-  printf("a>b = %d\n",a>b);
-  printf("a<b = %d\n",a<b);
-  printf("a>=b = %d\n",a>=b);
-  printf("a<=b = %d\n",a<=b);
-  printf("a==b = %d\n",a==b);
-  printf("a!=b = %d\n",a!=b);
-  
-  
+  scanf("%d", &b);
+  printf("a>b = %d\n", a > b);
+  printf("a<b = %d\n", a < b);
+  printf("a>=b = %d\n", a >= b);
+  printf("a<=b = %d\n", a <= b);
+  printf("a==b = %d\n", a == b);
+  printf("a!=b = %d\n", a != b);
 }
+// logical operators
+void logical() {
+  int a, b;
+  printf("Enter first number : ");
+  scanf("%d", &a);
+  printf("Enter second number : ");
+  scanf("%d", &b);
+  printf("a>b && a<b = %d\n", a > b && a < b); // and
+  printf("a>b || a<b = %d\n", a > b || a < b); // or
+  printf("!(a>b) = %d\n",!(a>b); //not
+}
+// demonstrat working of functions
+int function() {
+  show();
+  return 0;
+}
+show() { printf("Hello World "); }
+// scope rules
 
+int a = 10; // Global variable
+void scope() { sum(); }
+add() {
+  int x, y, sum; // local variable
+  x = 10;
+  y = 20;
+  sum = x + y;
+  printf("sum = %d", sum);
+}
 int main() {
   printf("Hello World\n");
   printf("C language learning\n");
@@ -68,8 +93,11 @@ int main() {
   // rectangle();
   // arithmetic();
   // circle();
-  //input_output();
-  //average();
-  relational();
+  // input_output();
+  // average();
+  // relational();
+  // logical();
+  // function();
+  scope();
   return 0;
 }
