@@ -1,4 +1,11 @@
 #include <stdio.h>
+
+
+
+
+
+
+
 void variables() {
   int a = 10;
   float b = 3.14;
